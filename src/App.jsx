@@ -7,7 +7,6 @@ import './style.css';
 export const App = () => {
 
 
-
     const [categories, setCategories] = useState(['']);
     
     const handleAddCategory = (value) => {
