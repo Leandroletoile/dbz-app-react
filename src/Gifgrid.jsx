@@ -29,3 +29,6 @@ Gifgrid.propTypes={
 	title: PropTypes.string.isRequired,
 	category: PropTypes.string.isRequired
   }
+
+
+  //HOLA
