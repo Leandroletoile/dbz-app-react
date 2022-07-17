@@ -1,0 +1,210 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    /* background-color: rgb(234, 234, 234); */
+    background-image: url("./../public/9.png");
+    background-attachment: fixed;
+  }
+  html{
+    background-color: none;
+  }
+  body {
+    padding: 60px;
+  }
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.search {
+    margin-right: 15px;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.2rem;
+    outline: 4px solid;
+    padding: 10px 15px;
+    width:50%;
+  }
+  .search:hover{
+    color: rgb(0, 255, 153);
+    background-color: rgb(0, 0, 0);
+  }
+  .buttonsearch{
+    background-color: black;
+    color: rgb(0, 255, 153);
+    font-size: 2.35rem;
+    border-radius: 10px;
+    border: 4px solid black;
+  }
+  .buttonsearch:hover{
+    color: rgb(255, 0, 0);
+  }
+  i{
+    background-color: black;
+  }
+  .buttonclose{
+    padding: 0px 0px;
+    background-color: black;
+    color: rgb(0, 255, 153);
+    font-size: 2.35rem;
+    border: none;
+  }
+  .buttonclose:hover{
+    color: rgb(255, 0, 0);
+  }
+  .buttonreset{
+    margin-left: 10px;
+    background-color: black;
+    color: rgb(0, 255, 153);
+    font-size: 2.35rem;
+    border-radius: 10px;
+    border: 4px solid black;
+  }
+  .buttonreset:hover{
+    color: rgb(255, 0, 0);
+  }
+  .padding-title-modal{
+    padding: 10px 15px;
+  }
+  h1 {
+    border:4px solid rgb(0, 255, 153);
+    color: rgb(0, 255, 153);
+    background-image: url("../public/8.jpg");
+    text-align: center;
+    font-size: 3.5rem;
+    border-radius: 25px;
+    background-attachment: local;
+    animation:example 300s infinite;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    text-align: center;
+    font-weight: bold;
+    background-color:rgb(0, 0, 0);
+    border:4px solid rgb(0, 255, 153);
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    border-bottom: 0;
+    color: rgb(0, 255, 153);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 7px 0px;
+  }
+  .card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    /* importante dejar este flex */
+    display: flex;   
+    /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03); */
+    border-radius: 15px;
+    overflow: hidden;  
+  }
+  .card img {
+    max-height: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    min-height: 250px;
+  }
+  .flex{
+    flex-grow: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ANIMACIÓN EFECTO FONDO NEGRO CON RAYAS BLANCAS */
+  @keyframes example {
+    0%   {background-position: initial;}
+    20%  {background-position: bottom;}
+    30%  {background-position: right;}
+    40%  {background-position: left;}
+    50% {background-position: top;}
+    60%  {background-position: right;}
+    70%  {background-position: left;}
+    80%  {background-position: bottom;}
+    90%   {background-position: right;}
+    100%  {background-position: left;}
+  }
+  
+  /* ANIMACION DE LETRAS H1 */
+  .move{
+    animation: move linear 2000ms infinite;
+    background-image: none;
+    background-attachment: local;
+  }
+  @keyframes move {
+    0% {
+      text-shadow:
+        4px -4px 0 rgb(255, 0, 0), 
+        3px -3px 0 rgb(255, 0, 0), 
+        2px -2px 0 rgb(255, 0, 0), 
+        1px -1px 0 rgb(255, 0, 0),
+        -3px 3px 0 #2600ff, 
+        -2px 2px 0 #2600ff, 
+        -1px 1px 0 #2600ff,
+        -4px 4px 0 #2600ff 
+      ;
+    }
+    25% {    
+      text-shadow:      
+        -4px -4px 0 #2600ff, 
+        -3px -3px 0 #2600ff, 
+        -2px -2px 0 #2600ff, 
+        -1px -1px 0 #2600ff,
+        4px 4px 0 rgb(255, 0, 0), 
+        3px 3px 0 rgb(255, 0, 0), 
+        2px 2px 0 rgb(255, 0, 0), 
+        1px 1px 0 rgb(255, 0, 0)      
+      ;
+    }
+    50% {
+      text-shadow:
+        -4px 4px 0 rgb(255, 0, 0), 
+        -3px 3px 0 rgb(255, 0, 0), 
+        -2px 2px 0 rgb(255, 0, 0), 
+        -1px 1px 0 rgb(255, 0, 0),
+        4px -4px 0 #2600ff, 
+        3px -3px 0 #2600ff, 
+        2px -2px 0 #2600ff, 
+        1px -1px 0 #2600ff
+      ;
+    }
+    75% {
+      text-shadow:
+        4px 4px 0 #2600ff, 
+        3px 3px 0 #2600ff, 
+        2px 2px 0 #2600ff, 
+        1px 1px 0 #2600ff,
+        -4px -4px 0 rgb(255, 0, 0), 
+        -3px -3px 0 rgb(255, 0, 0), 
+        -2px -2px 0 rgb(255, 0, 0), 
+        -1px -1px 0 rgb(255, 0, 0)      
+      ;
+    }
+    100% {
+      text-shadow:
+        4px -4px 0 rgb(255, 0, 0), 
+        3px -3px 0 rgb(255, 0, 0), 
+        2px -2px 0 rgb(255, 0, 0), 
+        1px -1px 0 rgb(255, 0, 0),
+        -4px 4px 0 #2600ff, 
+        -3px 3px 0 #2600ff, 
+        -2px 2px 0 #2600ff, 
+        -1px 1px 0 #2600ff
+      ;
+    }  
+  }
