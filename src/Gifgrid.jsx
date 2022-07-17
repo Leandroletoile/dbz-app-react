@@ -30,5 +30,3 @@ Gifgrid.propTypes={
 	category: PropTypes.string.isRequired
   }
 
-
-  //HOLA
