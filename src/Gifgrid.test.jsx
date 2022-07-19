@@ -38,7 +38,7 @@ describe('Test en <GifGrid />', () => {
         render( <Gifgrid category={category}/>)       
         //esta comprobando que renderice dos veces - toBe (2)
         expect( screen.getAllByRole('img').length ).toBe(2)
-
+        
     });
 
 });
