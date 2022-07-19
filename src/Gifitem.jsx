@@ -22,6 +22,7 @@ export const Gifitem = ({ title, url }) => {
 		<div className="card">
 			{/* <!-- Button trigger modal --> */}
 			<img
+				data-testid="imgButtonCard"
 				type="button"
 				id="myImg"
 				data-toggle="modal"
@@ -44,6 +45,7 @@ export const Gifitem = ({ title, url }) => {
 const Modal = ({ modalContent, handleExitModal }) => {
 	return (
 		<div
+			data-testid="returnModal"
 			className="modal fade"
 			id="staticBackdrop"
 			data-backdrop="static"

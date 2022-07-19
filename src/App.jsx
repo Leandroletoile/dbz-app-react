@@ -27,8 +27,8 @@ export const App = () => {
         <>
             <h1>
                 {console.log(categories.id)}
-                <span className="move">GifApp</span>
-            </h1>
+                <span data-testid="titleApp" className="move">GifApp</span>
+            </h1>            
 
             <AddCategory handleReset={handleReset} handleAddCategory={handleAddCategory} />
 

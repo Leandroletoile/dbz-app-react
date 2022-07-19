@@ -11,9 +11,9 @@ export const Gifgrid = ( {category, handleFilter} ) => {
     return(
         <div>
             {           
-             category ? <h3>{category}<button onClick={()=> handleFilter(category)} className="buttonclose"><i className="bi bi-x-circle buttonc"></i></button> </h3> : false
+             category ? <h3>{category}<button data-testid="delete" onClick={()=> handleFilter(category)} className="buttonclose"><i className="bi bi-x-circle buttonc"></i></button> </h3> : false
             }
-            <div className="card-grid">
+            <div className="card-grid" data-testid="cardGrid">
                 {
                     loading ? <h2>Cargando...</h2> :
                     

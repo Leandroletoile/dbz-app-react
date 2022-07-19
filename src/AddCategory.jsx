@@ -26,10 +26,10 @@ export const AddCategory = ({ handleAddCategory , handleReset }) => {
                 type="search" placeholder="Search..."
                 onChange={handleInputChange}
             />
-            <button type="sumbit" className="buttonsearch">
+            <button type="sumbit" className="buttonsearch" data-testid="search">
                 <i className="bi bi-search"></i>                
             </button>
-            <button className="buttonreset flex" onClick={handleReset}>
+            <button className="buttonreset flex" onClick={handleReset} data-testid="reset">
                 RESET              
             </button>
             
